@@ -1,0 +1,16 @@
+import random
+n = random.randint(1, 1000000)
+tr = 0
+print('Guess my number, from 1 to 1.000.000!: ')
+while True:
+    tr += 1
+    pn = int(input())
+    if pn > n:
+        print('It is too big!')
+    elif pn < n:
+        print('It is too small!')
+    else:
+        print()
+        print('YES! You guessed it m8!')
+        break
+print('It took you', tr, 'attempt(s)')
