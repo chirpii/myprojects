@@ -1,0 +1,18 @@
+print('--- triangle shaped text creator by mcv ---')
+x = input('text: ')
+rx = x.replace(' ', '')
+listt = []
+
+def appendd():
+    for char in rx:
+        listt.append(char)
+        print(''.join(listt))
+
+def popp():
+    while listt:
+        listt.pop()
+        print(''.join(listt))
+        
+print()
+appendd()
+popp()
